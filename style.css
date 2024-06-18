@@ -304,14 +304,14 @@ a{
 .swiper-container, .swiper-wrapper, .swiper-slide{
   display: none;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .swiper-pagination{
     display: none;
   }
   
   .swiper-container {
     display: block;
-    width:90%;
+    width:92.5%;
     margin: auto;
     flex: 2;
     height: auto;
@@ -319,6 +319,7 @@ a{
   .swiper-slide {
     text-align: center;
     height:auto;
+    width:100%;
     
   }
   .swiper-slide img {
