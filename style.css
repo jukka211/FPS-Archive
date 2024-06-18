@@ -304,26 +304,21 @@ a{
 .swiper-container, .swiper-wrapper, .swiper-slide{
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media only screen and (min-width: 200px) and (max-width: 800px) {
   .swiper-pagination{
     display: none;
   }
   
   .swiper-container {
     display: block;
-    width:92.5%;
+    width: 100%;
     margin: auto;
-    flex: 2;
+    flex: 1;
     height: auto;
   }
-  .swiper-slide {
-    text-align: center;
-    height:auto;
-    width:100%;
-    
-  }
+  
   .swiper-slide img {
-    width: 100%;
+    width: 92%;
     height: auto;
     
        
@@ -333,7 +328,7 @@ a{
     overflow-x: hidden;
   }
  .container{
-  flex:0;
+  flex:1;
   display: none;
   width:fit-content;
   justify-content:flex-start; /* Align items horizontally in the center */
@@ -369,18 +364,28 @@ a{
     }
     
     .text {
-      
+      font-size: 200px;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
     }
-    
-      .name {
-    
+    .title1, .title2, .title3, .title4, .title5, .title6, .title7, .title8, .title9, .title10, .title11, .title12, .title13, .title14, .title15, .title16, .title17, .title18, .title19, .title20, .title21, .title22, .title23 {
+      font-size: 11.5px;
+      letter-spacing: -0.2px;
+    }
+
+    .text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10, .text11, .text12, .text13, .text14, .text15, .text16, .text17, .text18, .text19, .text20, .text21, .text22, .text23 {
+      font-size: 11.5px;
+    }
+
+    .contact, .fps-archive, .information, a, .type, .name {
+      font-size: 11.5px;
+    }
+    .name {
     margin-right: 20px;
    }
     .container2{
-     flex:2;
-     position: fixed;
+     flex:0.3;
+     position: relative;
      bottom:0px;
       height: auto;
       overflow-x: auto;
@@ -388,7 +393,7 @@ a{
      margin-left:0;
       align-items:flex-start;
       background-color: transparent;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
       
     }
     

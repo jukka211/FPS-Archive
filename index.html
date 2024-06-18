@@ -28,7 +28,7 @@
      
     
    <div class="information">
-    <tag class="fps-archive"><a href="C:\Users\Ivan\Desktop\filmarchive\index.html" style="text-decoration: none;">FPS Archive</a></tag> 
+    <div class="fps-archive"><a href="C:\Users\Ivan\Desktop\filmarchive\index.html" style="text-decoration: none;">FPS Archive</a></div> 
     <tag class="title1">“Echo” 2023</tag>
     <tag class="title2">“Metamorphose” 2022</tag>
     <tag class="title3">“Das Ende vom Ende der Welt” 2022</tag>
@@ -55,7 +55,7 @@
 
 
     
-    <tag class="contact"><a href="contact.html" style="text-decoration: none;">About</a></tag>
+    <div class="contact"><a href="C:\Users\Ivan\Desktop\filmarchive\contact.html" style="text-decoration: none;">About</a></div>
 
   </div>
    
@@ -402,63 +402,79 @@
 <div class="swiper-container mobile-gallery">
   <div class="swiper-wrapper">
     
-    <div class="swiper-slide" id="01"><img src="image5_50.webp" alt="gg"></div>
-    <div class="swiper-slide" id="02"><img src="image33.webp" alt="gg"></div>
+    <div class="swiper-slide" id="01"><img src="image5_50.jpg" alt="gg"></div>
+    <div class="swiper-slide" id="02"><img src="image33.png" alt="gg"></div>
     <!-- Add more slides as needed -->
     <div class="swiper-slide" id="03"><img src="images/das_ende.gif" alt="gg"></div>
     <div class="swiper-slide" id="04"><img src="image6.gif" alt="gg"></div>
-    <div class="swiper-slide" id="05"><img src="image7.webp" alt="Poster"></div>
-    <div class="swiper-slide" id="06"><img src="images/Florian_ Engelhardt.webp" alt="gg"></div>
-    <div class="swiper-slide" id="07"><img src="images/ich_melde_mich.webp" alt="gg"></div>
+    <div class="swiper-slide" id="05"><img src="image7.jpg" alt="Poster"></div>
+    <div class="swiper-slide" id="06"><img src="images/Florian_ Engelhardt.jpg" alt="gg"></div>
+    <div class="swiper-slide" id="07"><img src="images/ich_melde_mich.jpg" alt="gg"></div>
     <div class="swiper-slide" id="08"><img src="images/after_us_comes.gif" alt="gg"></div>
-    <div class="swiper-slide" id="09"><img src="images/after_us_comes_3_Bemir Bilalic.webp" alt="gg"></div>
-    <div class="swiper-slide" id="10"><img src="image4_20.webp" alt="gg"></div>
+    <div class="swiper-slide" id="09"><img src="images/after_us_comes_3_Bemir Bilalic.jpg" alt="gg"></div>
+    <div class="swiper-slide" id="10"><img src="image4_20.jpg" alt="gg"></div>
     <div class="swiper-slide" id="11"><img src="images/homeforchristmas_sina.gif" alt="gg"></div>
-    <div class="swiper-slide" id="12"><img src="images/I_ME_Poster.webp" alt="gg"></div>
-    <div class="swiper-slide" id="13"><img src="images/image11.webp" alt="gg"></div>
-    <div class="swiper-slide" id="14"><img src="images/tracesintheforest Kopie.webp" alt="gg"></div>
-    <div class="swiper-slide" id="15"><img src="images/thumbnail_miriam_haefele_alles_ist_hin.webp" alt="gg"></div>
+    <div class="swiper-slide" id="12"><img src="images/I_ME_Poster.png" alt="gg"></div>
+    <div class="swiper-slide" id="13"><img src="images/image11.jpg" alt="gg"></div>
+    <div class="swiper-slide" id="14"><img src="images/tracesintheforest Kopie.jpg" alt="gg"></div>
+    <div class="swiper-slide" id="15"><img src="images/thumbnail_miriam_haefele_alles_ist_hin.jpg" alt="gg"></div>
     <div class="swiper-slide" id="16"><img src="images/interchange_johanna.gif" alt="gg"></div>
     <div class="swiper-slide" id="17"><img src="images/miriam_haefele_Lullaby_animiert.gif" alt="gg"></div>
-    <div class="swiper-slide" id="18"><img src="images/image12.webp" alt="gg"></div>
-    <div class="swiper-slide" id="19"><img src="images/RichardParmentier.webp" alt="gg"></div>
-    <div class="swiper-slide" id="20"><img src="images/MarkusBader.webp" alt="gg"></div>
+    <div class="swiper-slide" id="18"><img src="images/image12.jpg" alt="gg"></div>
+    <div class="swiper-slide" id="19"><img src="images/RichardParmentier.jpg" alt="gg"></div>
+    <div class="swiper-slide" id="20"><img src="images/MarkusBader.jpg" alt="gg"></div>
     <div class="swiper-slide" id="21"><img src="images/interchange_m.gif" alt="gg"></div>
     <div class="swiper-slide" id="22"><img src="images/sanger.gif" alt="gg"></div>
-    <div class="swiper-slide" id="23"><img src="image9.webp" alt="gg"></div>
+    <div class="swiper-slide" id="23"><img src="image9.jpg" alt="gg"></div>
   </div>
   <!-- Add Pagination -->
   <div class="swiper-pagination"></div>
-</div>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- Add this script after Swiper initialization -->
-<script>
-  $(document).ready(function() {
-    // Initialize Swiper for mobile
-    var swiper = new Swiper('.mobile-gallery', {
-      loop: false, // Disable loop
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      // Add slide change event handler
-      on: {
-        slideChange: function() {
-          // Hide texts and titles from the previous slide
-          var previousSlide = this.previousIndex + 1;
-          $('.title' + previousSlide + ', .text' + previousSlide).hide();
-          
-          // Show title and text for the current slide
-          var currentSlide = this.activeIndex + 1;
-          $('.title' + currentSlide + ', .text' + currentSlide).show();
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Initialize Swiper for mobile
+      var swiper = new Swiper('.mobile-gallery', {
+        loop: false, // Disable loop
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: false, // Disable pagination clicks
         },
-      },
-      preventClicksPropagation: true, // Prevent clicks propagation
-    });
+        preventClicks: true, // Prevent all click actions
+        preventClicksPropagation: true, // Prevent clicks propagation
+        noSwiping: true, // Disable swiping for touch gestures
+        noSwipingClass: 'swiper-no-swiping',
+        touchMoveStopPropagation: true, // Prevent touch move propagation
+        // Add slide change event handler
+        on: {
+          slideChange: function() {
+            // Hide texts and titles from the previous slide
+            var previousSlide = this.previousIndex + 1;
+            $('.title' + previousSlide + ', .text' + previousSlide).hide();
+            
+            // Show title and text for the current slide
+            var currentSlide = this.activeIndex + 1;
+            $('.title' + currentSlide + ', .text' + currentSlide).show();
+          },
+        },
+      });
 
-   
-  });
-</script>
+      // Prevent default click behavior on slides
+      $('.swiper-slide').on('click', function(event) {
+        event.preventDefault();
+      });
+
+      // Prevent default touch behavior on slides
+      $('.swiper-slide').on('touchstart', function(event) {
+        event.preventDefault();
+      });
+
+    });
+  </script>
+
+
+<!-- EDIT! -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const hoverContainer = document.querySelector('.hover-container');
