@@ -311,10 +311,10 @@ a{
   
   .swiper-container {
     display: block;
-    width: 95%;
+    
     margin: auto;
     flex: 2;
-    height: auto;
+    height: 90%;
   }
   .swiper-slide {
     text-align: center;
